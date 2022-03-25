@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E43A62D27ED461100393A15 /* PokemonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E43A62C27ED461100393A15 /* PokemonCollectionViewCell.swift */; };
 		DBD9B69227E9652B00BBC9E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD9B69127E9652B00BBC9E0 /* AppDelegate.swift */; };
 		DBD9B69427E9652B00BBC9E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD9B69327E9652B00BBC9E0 /* SceneDelegate.swift */; };
 		DBD9B69627E9652B00BBC9E0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD9B69527E9652B00BBC9E0 /* MainViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E43A62C27ED461100393A15 /* PokemonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCollectionViewCell.swift; sourceTree = "<group>"; };
 		DBD9B68E27E9652B00BBC9E0 /* PokiAPIGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokiAPIGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBD9B69127E9652B00BBC9E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBD9B69327E9652B00BBC9E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				DBD9B69A27E9652B00BBC9E0 /* Assets.xcassets */,
 				DBD9B69C27E9652B00BBC9E0 /* LaunchScreen.storyboard */,
 				DBD9B69F27E9652B00BBC9E0 /* Info.plist */,
+				6E43A62C27ED461100393A15 /* PokemonCollectionViewCell.swift */,
 			);
 			path = PokiAPIGallery;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				DBD9B69627E9652B00BBC9E0 /* MainViewController.swift in Sources */,
 				DBD9B69227E9652B00BBC9E0 /* AppDelegate.swift in Sources */,
 				DBD9B69427E9652B00BBC9E0 /* SceneDelegate.swift in Sources */,
+				6E43A62D27ED461100393A15 /* PokemonCollectionViewCell.swift in Sources */,
 				DBD9B6A627E9654E00BBC9E0 /* PokeAPIHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
