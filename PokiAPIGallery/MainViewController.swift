@@ -9,11 +9,9 @@ import UIKit
 
 class MainViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource  {
     
-    let pokemons = [Pokemon]()
+    var pokeImagesList = [UIImage]()
 
     @IBOutlet weak var collectionView: UICollectionView!
-    
-    @IBOutlet weak var pokeimage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,18 +19,24 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        // Do any additional setup after loading the view.
         PokeAPIHelper.fetchAllImages { images in
-            self.pokeimage.image = images.first!
+            self.pokeImagesList = images
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+            }
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        <#code#>
+        pokeImagesList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        <#code#>
+        guard
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "pokemon", for: indexPath) as? PokemonCollectionViewCell
+        else{fatalError()}
+        cell.pokeImage.image = pokeImagesList[indexPath.row]
+        return cell
     }
 
 
